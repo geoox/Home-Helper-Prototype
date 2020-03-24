@@ -1,0 +1,15 @@
+
+  <cdk-virtual-scroll-viewport itemSize="200" class="viewport">
+    <mat-card *cdkVirtualFor="let ad of advertisements">
+      <mat-card-title>Job: {{ad.name}}</mat-card-title>
+      <img mat-card-image src="https://picsum.photos/200">
+      <mat-card-content>
+        <b>Description: </b>{{ad.description}} <br>
+        <b>Owner: </b>{{ad.owner_name}} <br>
+        <b>Location: </b>{{ad.location}} <br>
+        <b>Remuneration: </b>{{ad.remuneration}} DKK<br>
+        <b>Posting Date: </b>{{ad.date}} <br>
+
+      </mat-card-content>
+    </mat-card>
+  </cdk-virtual-scroll-viewport>
