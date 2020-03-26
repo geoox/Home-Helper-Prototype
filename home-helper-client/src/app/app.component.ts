@@ -20,7 +20,7 @@ export class AppComponent implements OnInit{
   }
   
   fetchData(){
-    fetch("http://localhost:8060/ads").then(ads => 
+    fetch("https://home-helper-prototype.herokuapp.com/ads").then(ads => 
     ads.json().then( ads => 
       {
         this.advertisements = ads;
